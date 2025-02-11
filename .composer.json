@@ -1,0 +1,32 @@
+{
+    "name": "gearmagicru/gm-be-site_menu",
+    "description": "Control panel module \"Site menu\"",
+    "keywords": [
+        "gm",
+        "gearmagic",
+        "GM Panel",
+        "module",
+        "menu"
+    ],
+    "homepage": "https://apps.gearmagic.ru/component/gm-be-site_menu",
+    "type": "component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Tivonenko",
+            "email": "anton.tivonenko@gmail.com",
+            "homepage": "https://gearmagic.ru"
+        }
+    ],
+    "require": {
+        "gearmagicru/gm-composer-plugin": "*"
+    },
+    "extra": {
+        "gm": {
+            "id": "gm.be.site_menu",
+            "vendor": "gm"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
