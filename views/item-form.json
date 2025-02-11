@@ -1,0 +1,158 @@
+[
+    "@languagesCombobox",
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "name": "name",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Description",
+        "name": "description",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Title",
+        "name": "title",
+        "tooltip": "#The title attribute is the alternative title of the menu item that appears when you hover over it",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Class CSS",
+        "name": "css",
+        "tooltip": "#Allows you to set an individual CSS class for a menu item. It is used to give a single item an individual style.",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "combobox",
+        "fieldLabel": "#Relationship to link",
+        "tooltip": "#Specifies a value for the rel attribute of menu items. Most often, nofollow or noindex is used for search engine optimization purposes.",
+        "name": "rel",
+        "hiddenName": "rel",
+        "store": {
+            "fields": ["id", "name"],
+            "data": [
+                {"id": "null", "name": "#[None]"},
+                {"id": "archives", "name": "#Link to site archive"},
+                {"id": "author", "name": "#Link to the page about the author on the same domain"},
+                {"id": "bookmark", "name": "#Permalink to a section or post"},
+                {"id": "first", "name": "#Link to first page"},
+                {"id": "help", "name": "#Link to first page"},
+                {"id": "index", "name": "#Link to content"},
+                {"id": "last", "name": "#Link to last page"},
+                {"id": "license", "name": "#Link to license agreement or copyright page"},
+                {"id": "me", "name": "#Link to the author's page on another domain"},
+                {"id": "next", "name": "#Link to next page or section"},
+                {"id": "nofollow", "name": "#Do not send by reference TIC and PR"},
+                {"id": "noreferrer", "name": "#Do not pass HTTP headers by reference"},
+                {"id": "prefetch", "name": "#Specifies that the specified resource should be pre-cache"},
+                {"id": "prev", "name": "#Link to the previous page or section"},
+                {"id": "search", "name": "#Search link"},
+                {"id": "sidebar", "name": "#Add link to browser favorites"},
+                {"id": "tag", "name": "#Indicates that the label (tag) is related to the current document"},
+                {"id": "up", "name": "#Link to parent page"}
+            ]
+        },
+        "listConfig": {
+            "itemTpl": ["<div data-qtip=\"{name}\">{name:ellipsis(50)} <tpl if=\"id!='null'\">(<span style=\"color:#428862\">{id}</span>)<tpl else></tpl> </div>"]
+        },
+        "forceSelection": false,
+        "displayField": "name",
+        "valueField": "id",
+        "queryMode": "local",
+        "anchor": "100%",
+        "editable": true
+    },
+    {
+        "id": "gm-be-menu__type",
+        "xtype": "combobox",
+        "fieldLabel": "#Type",
+        "name": "type",
+        "hiddenName": "type",
+        "store": {
+            "fields": ["id", "name", "fieldId"],
+            "data": [
+                {"id": "article", "name": "#Article", "fieldId": "gm-be-menu__article"},
+                {"id": "category", "name": "#Article category", "fieldId": "gm-be-menu__category"},
+                {"id": "link", "name": "#Arbitrary link", "fieldId": "gm-be-menu__link"},
+                {"id": "file", "name": "#File on the server", "fieldId": "gm-be-menu__file"},
+                {"id": "anchor", "name": "#Anchor", "fieldId": "gm-be-menu__anchor"}
+            ]
+        },
+        "forceSelection": true,
+        "displayField": "name",
+        "valueField": "id",
+        "value": "link",
+        "queryMode": "local",
+        "anchor": "100%",
+        "editable": false,
+        "listeners": {
+            "change": "onTypeChange"
+        }
+    },
+    "@articlesCombobox",
+    "@categoriesCombobox",
+    {
+        "id": "gm-be-menu__link",
+        "xtype": "textfield",
+        "fieldLabel": "#URL address",
+        "name": "linkUrl",
+        "maxLength": 255,
+        "anchor": "100%"
+    },
+    {
+        "id": "gm-be-menu__file",
+        "xtype": "textfield",
+        "fieldLabel": "#File URL",
+        "name": "fileUrl",
+        "maxLength": 255,
+        "anchor": "100%",
+        "hidden": true
+    },
+    {
+        "id": "gm-be-menu__anchor",
+        "xtype": "textfield",
+        "fieldLabel": "#Anchor",
+        "tooltip": "#A bookmark with a unique name at a specific place on a web page, designed to create a transition to it via a link",
+        "name": "anchor",
+        "maxLength": 255,
+        "anchor": "100%",
+        "hidden": true
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Icon URL",
+        "name": "imageUrl",
+        "maxLength": 255,
+        "anchor": "100%"
+    },
+    {
+        "xtype": "checkbox",
+        "fieldLabel": "#Open in new window",
+        "name": "externalUrl",
+        "ui": "switch"
+    },
+    {
+        "xtype": "checkbox",
+        "fieldLabel": "#Visible",
+        "name": "visible",
+        "ui": "switch",
+        "checked": true
+    },
+    {
+        "xtype": "hidden",
+        "name": "parentId",
+        "value": "@parentId"
+    }
+]

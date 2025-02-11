@@ -1,0 +1,27 @@
+[
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "name": "name",
+        "tooltip": "#The name is displayed only for you",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Description",
+        "name": "description",
+        "tooltip": "#Description displayed only for you",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "checkbox",
+        "fieldLabel": "#Visible",
+        "name": "visible",
+        "ui": "switch",
+        "checked": true
+    }
+]
