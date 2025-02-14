@@ -1,13 +1,7 @@
 {
     "name": "gearmagicru/gm-be-site_menu",
-    "description": "Control panel module \"Site menu\"",
-    "keywords": [
-        "gm",
-        "gearmagic",
-        "GM Panel",
-        "module",
-        "menu"
-    ],
+    "description": "Control Panel module \"Site menu\"",
+    "keywords": ["gearmagic", "gm-panel", "gm-component", "gm-module", "module", "menu"],
     "homepage": "https://apps.gearmagic.ru/component/gm-be-site_menu",
     "type": "component",
     "license": "MIT",
