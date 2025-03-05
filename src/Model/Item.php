@@ -43,23 +43,22 @@ class Item extends ActiveRecord
     public function maskedAttributes(): array
     {
         return [
-            'id'          => 'id',
-            'parentId'    => 'parent_id',
-            'menuId'      => 'menu_id',
-            'link_id'     => 'linkId',
-            'type'        => 'type',
-            'count'       => 'count',
-            'index'       => 'index',
-            'name'        => 'name',
-            'description' => 'description',
-            'title'       => 'title',
-            'css'         => 'css',
-            'rel'         => 'rel',
-            'url'         => 'url',
-            'aaa'         => 'aaa',
-            'externalUrl' => 'external_url',
-            'imageUrl'    => 'image_url',
-            'visible'     => 'visible'
+            'id'          => 'id', // идентификатор элемента
+            'parentId'    => 'parent_id', // идентификатор родительского элемента
+            'menuId'      => 'menu_id', // идентификатор меню (которому принадлежит элемент)
+            'link_id'     => 'linkId', // идентификатор записи компонента (определяется типом элемента)
+            'type'        => 'type', // тип элемента: якорь, файл на сервере...
+            'count'       => 'count', // количество элементов на уровень ниже
+            'index'       => 'index', // порядковый номер
+            'name'        => 'name', // название
+            'description' => 'description', // описание
+            'title'       => 'title', // заголовок (при наведении курсора на элемент)
+            'css'         => 'css', // CSS класс элемента
+            'rel'         => 'rel', // атрибут "rel"
+            'url'         => 'url', // якорь или URL-адрес
+            'externalUrl' => 'external_url', // открыть URL-адрес в новом окне
+            'imageUrl'    => 'image_url', // URL-адрес значка элемента
+            'visible'     => 'visible' // видимость элемента
         ];
     }
 
@@ -77,7 +76,7 @@ class Item extends ActiveRecord
         return $this->selectByPk($identifier);
     }
 
-        /**
+    /**
      * Возвращает только одну активную запись по указанному значению первичного ключа.
      * 
      * @see ActiveRecord::selectOne()

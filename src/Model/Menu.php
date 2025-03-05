@@ -42,10 +42,10 @@ class Menu extends ActiveRecord
     public function maskedAttributes(): array
     {
         return [
-            'id'          => 'id',
-            'name'        => 'name',
-            'description' => 'description',
-            'visible'     => 'visible'
+            'id'          => 'id', // идентификатор меню
+            'name'        => 'name', // название 
+            'description' => 'description', // описание
+            'visible'     => 'visible' // видимость
         ];
     }
 
