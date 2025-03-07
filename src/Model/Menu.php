@@ -62,4 +62,17 @@ class Menu extends ActiveRecord
     {
         return $this->selectByPk($identifier);
     }
+
+    /**
+     * Удаляет все записи.
+     * 
+     * @throws \Gm\Db\Adapter\Driver\Exception\CommandException Невозможно выполнить инструкцию SQL.
+     */
+    public function deleteAll()
+    {
+        $this->getDb()
+            ->createCommand()
+                ->truncateTable($this->tableName())
+                ->execute();
+    }
 }
