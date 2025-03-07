@@ -334,4 +334,17 @@ class Item extends ActiveRecord
         $index = (int) $index;
         return $index + 1;
     }
+
+    /**
+     * Удаляет все записи.
+     * 
+     * @throws \Gm\Db\Adapter\Driver\Exception\CommandException Невозможно выполнить инструкцию SQL.
+     */
+    public function deleteAll()
+    {
+        $this->getDb()
+            ->createCommand()
+                ->truncateTable($this->tableName())
+                ->execute();
+    }
 }
