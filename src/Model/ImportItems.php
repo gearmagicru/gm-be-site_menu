@@ -16,7 +16,7 @@ namespace Gm\Backend\SiteMenu\Model;
  * @package Gm\Backend\SiteMenu\Model
  * @since 1.0
  */
-class Import extends \Gm\Import\Import
+class ImportItems extends \Gm\Import\Import
 {
     /**
      * {@inheritdoc}
