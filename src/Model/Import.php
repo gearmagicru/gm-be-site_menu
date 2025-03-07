@@ -30,13 +30,27 @@ class Import extends \Gm\Import\Import
     {
         return [
             // идентификатор
-            'id' => ['field' => 'id', 'type' => 'int'],
+            'id' => [
+                'field' => 'id', 
+                'type'  => 'int'
+            ],
             // название
-            'name' => ['field' => 'name'],
+            'name' => [
+                'field'  => 'name',
+                'length' => 120,
+                'trim'   => true
+            ],
             // описание
-            'description' => ['field' => 'description'],
+            'description' => [
+                'field' => 'description',
+                'length' => 255,
+                'trim'   => true
+            ],
             // видимость
-            'visible' => ['field' => 'visible', 'type' => 'int']
+            'visible' => [
+                'field' => 'visible', 
+                'type'  => 'int'
+            ]
         ];
     }
 }
