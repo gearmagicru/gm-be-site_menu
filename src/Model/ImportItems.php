@@ -30,39 +30,97 @@ class Import extends \Gm\Import\Import
     {
         return [
             // идентификатор элемента
-            'id' => ['field' => 'id', 'type' => 'int'],
+            'id' => [
+                'field' => 'id', 
+                'type' => 'int'
+            ],
             // идентификатор родительского элемента
-            'parent_id' => ['field' => 'parent_id', 'type' => 'int'],
+            'parent_id' => [
+                'field' => 'parent_id', 
+                'type'  => 'int'
+            ],
             // идентификатор меню (которому принадлежит элемент)
-            'menu_id' => ['field' => 'menu_id', 'type' => 'int'],
+            'menu_id' => [
+                'field' => 'menu_id', 
+                'type'  => 'int'
+            ],
             // идентификатор записи компонента (определяется типом элемента)
-            'link_id' => ['field' => 'link_id', 'type' => 'int'],
+            'link_id' => [
+                'field' => 'link_id', 
+                'type'  => 'int'
+            ],
             // идентификатор языка
-            'language_id' => ['field' => 'language_id', 'type' => 'int'],
+            'language_id' => [
+                'field' => 'language_id', 
+                'type'  => 'int'
+            ],
             // тип элемента: якорь, файл на сервере...
-            'type' => ['field' => 'type'],
+            'type' => [
+                'field'  => 'type',
+                'length' => 50,
+                'trim'   => true
+            ],
             // количество элементов на уровень ниже
-            'count' => ['field' => 'count', 'type' => 'int'],
+            'count' => [
+                'field' => 'count', 
+                'type'  => 'int'
+            ],
             // порядковый номер
-            'index' => ['field' => 'index', 'type' => 'int'],
+            'index' => [
+                'field' => 'index', 
+                'type'  => 'int'
+            ],
             // название
-            'name' => ['field' => 'name'],
+            'name' => [
+                'field'  => 'name',
+                'length' => 255,
+                'trim'   => true
+            ],
             // описание
-            'description' => ['field' => 'description'],
+            'description' => [
+                'field' => 'description',
+                'trim'  => true
+            ],
             // заголовок (при наведении курсора на элемент)
-            'title' => ['field' => 'title'],
+            'title' => [
+                'field'  => 'title',
+                'length' => 255,
+                'trim'   => true
+            ],
             // CSS класс элемента
-            'css' => ['field' => 'css'],
+            'css' => [
+                'field' => 'css',
+                'length' => 50,
+                'trim'   => true
+            ],
             // атрибут "rel"
-            'rel' => ['field' => 'rel'],
+            'rel' => [
+                'field' => 'rel',
+                'length' => 50,
+                'trim'   => true
+            ],
             // якорь или URL-адрес
-            'url' => ['field' => 'url'],
+            'url' => [
+                'field' => 'url',
+                'length' => 255,
+                'trim'   => true
+            ],
             // открыть URL-адрес в новом окне
-            'external_url' => ['field' => 'external_url', 'type' => 'int'],
+            'external_url' => [
+                'field' => 'external_url', 
+                'type'  => 'int'
+            ],
             // URL-адрес значка элемента
-            'image_url' => ['field' => 'image_url'],
+            'image_url' => [
+                'field' => 'image_url',
+                'length' => 255,
+                'trim'   => true
+            ],
             // видимость элемента
-            'visible' => ['field' => '', 'type' => 'int'],
+            'visible' => [
+                'field' => 'visible', 
+                'type' => 'int'
+            ]
         ];
     }
 }
