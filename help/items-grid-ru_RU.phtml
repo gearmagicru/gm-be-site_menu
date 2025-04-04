@@ -15,36 +15,37 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/items-grid.png' ?>" />
     </div>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+    <p>В списке отображаются все пункты выбранного из списка меню сайта.</p>
     <h2>Столбцы списка</h2>
     <ul class="g-help-list">
-        <li><b>№.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>ID.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Название.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Описание.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Заголовок.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Класс CSS.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Отношение к ссылке.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Тип.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>URL адрес.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Открыть страницу сайта.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Количество подпунктов.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Открыть в новом окне.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Видимость.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
+        <li><b>№.</b> Порядковый номер пункта в меню;</li>
+        <li><b>ID.</b> Идентификатор пункта меню;</li>
+        <li><b>Название.</b> Название пункта меню;</li>
+        <li><b>Описание.</b> Описание пункта меню;</li>
+        <li><b>Язык.</b> Язык для которого будет отображаться пункт меню;</li>
+        <li><b>Заголовок.</b> Заголовок - это атрибут (title) альтернативного заголовка пункта меню, который появляется при наведении курсора на него;</li>
+        <li><b>Класс CSS.</b> Индивидуальный класс CSS для пункта в меню. Применяется для придания отдельно взятому пункту индивидуального стиля;</li>
+        <li><b>Отношение к ссылке.</b> Указывает значение атрибуту rel пункта меню;</li>
+        <li><b>Тип.</b> Тип пункта меню (ссылка на статью, произвольная ссылка...);</li>
+        <li><b>URL-адрес.</b> URL-адрес перехода при нажатии на пункт меню;</li>
+        <li><b>Открыть страницу сайта.</b> Переход по URL-адресу указанного в пункте меню;</li>
+        <li><b>Подпунктов.</b> Количество подпунктов в пункте меню;</li>
+        <li><b>В новом окне.</b> Показывает на открытие нового окна при переходе по указанному URL-адресу;</li>
+        <li><b>Видимость.</b> Показать или скрыть пункт меню.</li>
     </ul>
 
     <h2>Панель инструментов</h2>
     <ul class="g-help-list">
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-item-add.svg' ?>" /> <b>Добавить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-item-delete.svg' ?>" /> <b>Удалить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Очистить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Правка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Выделить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Обновить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Профилирование записи.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Показать.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-columns.svg' ?>" /> <b>Столбцы.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Справка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Поиск.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+    <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Добавить.</b> Вызывает форму для добавления пункта меню;</li>
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Удалить.</b> Удаляет выделенные пункты меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Очистить.</b> Удаляет все пункты меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Правка.</b> Вызвает форму для редактирования пункта меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Выделить.</b> Выделяет или убирает выделение пунктов меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Обновить.</b> Обновляет список пунктов меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Профилирование записи.</b> Разворачивает или сворачивает Панель навигации для отображения информации о пункте меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Показать / Скрыть.</b> Показывает  скрытые столбцы;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Справка.</b> Вызывает окно справочной информации для текущего списка;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Поиск.</b> Вызывает форму поиска записей в списке.</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/filter.svg' ?>" /> <b>Фильтр.</b> Вызывает форму фильтрации записей в списке.</li>
     </ul>
 </article>

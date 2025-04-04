@@ -15,28 +15,27 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
     </div>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+    <p>В списке отображаются все меню сайта.</p>
     <h2>Столбцы списка</h2>
     <ul class="g-help-list">
-        <li><b>ID.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Название.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Описание.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Пункты меню сайта.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Видимость меню.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
+        <li><b>ID.</b> Идентификатор меню;</li>
+        <li><b>Название.</b> Название меню;</li>
+        <li><b>Описание.</b> Описание меню;</li>
+        <li><b>Пункты.</b> Переход к редактированию пунктов меню;</li>
+        <li><b>Видимость.</b> Видимость меню;</li>
     </ul>
 
     <h2>Панель инструментов</h2>
     <ul class="g-help-list">
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Добавить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Удалить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Очистить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Правка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Выделить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Обновить.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Профилирование записи.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Показать.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-columns.svg' ?>" /> <b>Столбцы.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Справка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Поиск.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+    <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Добавить.</b> Вызывает форму для добавления меню;</li>
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Удалить.</b> Удаляет выделенные меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Очистить.</b> Удаляет все меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Правка.</b> Вызвает форму для редактирования меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Выделить.</b> Выделяет или убирает выделение меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Обновить.</b> Обновляет список меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Профилирование записи.</b> Разворачивает или сворачивает Панель навигации для отображения информации о меню;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Показать / Скрыть.</b> Показывает скрытые столбцы;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Справка.</b> Вызывает окно справочной информации для текущего списка;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Поиск.</b> Вызывает форму поиска записей в списке.</li>
     </ul>
 </article>
